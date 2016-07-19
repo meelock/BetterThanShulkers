@@ -1,7 +1,7 @@
 package com.Meelock.BtS.init;
 
 import com.Meelock.BtS.BtSReference;
-import com.Meelock.BtS.items.ItemPlastic;
+import com.Meelock.BtS.items.ItemGeneric;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -13,7 +13,7 @@ public class ModItems {
 	public static Item plastic;
 	
 	public static void init() {
-		plastic = new ItemPlastic();
+		plastic = new ItemGeneric(BtSReference.BtSItems.PLASTIC);
 	}
 	
 	public static void register() {
