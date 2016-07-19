@@ -1,5 +1,6 @@
 package com.Meelock.BtS;
 
+import com.Meelock.BtS.init.ModBlocks;
 import com.Meelock.BtS.init.ModItems;
 import com.Meelock.BtS.proxy.CommonProxy;
 
@@ -27,6 +28,9 @@ public class BtSMain {
 		
 		ModItems.init();
 		ModItems.register();
+		
+		ModBlocks.init();
+		ModBlocks.register();
 	}
 	
 	@EventHandler

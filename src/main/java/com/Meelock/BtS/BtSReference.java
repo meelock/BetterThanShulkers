@@ -29,4 +29,25 @@ public class BtSReference {
 			return registryName;
 		}
 	}
+	public static enum BtSBlocks {
+		ELECTRICFENCE("electricfence", "BlockElectricFence");
+		
+		private String unlocalizedName;
+		private String registryName;
+		
+		
+		BtSBlocks(String unlocalizedName, String registryName) {
+			this.unlocalizedName = unlocalizedName;
+			this.registryName = registryName;
+		}
+		
+		public String getUnlocalizedName() {
+			return unlocalizedName;
+		}
+		
+		public String getRegistryName() {
+			return registryName;
+		}
+	}
+	
 }
