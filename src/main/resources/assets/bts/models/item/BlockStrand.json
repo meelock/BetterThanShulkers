@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "bts:blocks/Electric_Fence"
+        "all": "bts:blocks/strand"
     }
 }

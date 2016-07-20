@@ -12,14 +12,14 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
 	
-	public static Block electricFence;
+	public static Block strand;
 	
 	public static void init() {
-		electricFence = new BlockGeneric(BtSReference.BtSBlocks.ELECTRICFENCE);
+		strand = new BlockGeneric(BtSReference.BtSBlocks.STRAND);
 	}
 	
 	public static void register() {
-		registerBlock(electricFence);
+		registerBlock(strand);
 	}
 	
 	private static void registerBlock(Block block) {
@@ -30,7 +30,7 @@ public class ModBlocks {
 	}
 	
 	public static void registerRenders() {
-		registerRender(electricFence);
+		registerRender(strand);
 	}
 	
 	private static void registerRender(Block block) {
