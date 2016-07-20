@@ -30,7 +30,7 @@ public class BtSReference {
 		}
 	}
 	public static enum BtSBlocks {
-		STRAND("strand", "BlockStrand");
+		STRAND("strand", "BlockStrand"), ELECTRIC_FENCE("electric_fence", "BlockElectric_fence");
 		
 		private String unlocalizedName;
 		private String registryName;

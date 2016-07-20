@@ -11,20 +11,21 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems {
 
 	public static Item plastic;
-	
+
 	public static void init() {
 		plastic = new ItemGeneric(BtSReference.BtSItems.PLASTIC);
 	}
-	
+
 	public static void register() {
 		GameRegistry.register(plastic);
 	}
-	
+
 	public static void registerRenders() {
 		registerRender(plastic);
 	}
-	
+
 	private static void registerRender(Item item) {
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(item.getRegistryName(), "Inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
+				new ModelResourceLocation(item.getRegistryName(), "Inventory"));
 	}
 }

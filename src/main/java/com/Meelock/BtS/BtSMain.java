@@ -14,35 +14,32 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = BtSReference.MOD_ID, name = BtSReference.NAME, version = BtSReference.VERSION, acceptedMinecraftVersions = BtSReference.ACCEPTED_VERSIONS)
 public class BtSMain {
-	
+
 	@Instance
 	public static BtSMain instance;
-	
+
 	@SidedProxy(clientSide = BtSReference.CLIENT_PROXY_CLASS, serverSide = BtSReference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
-	
+
 	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
-	{
+	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println("Pre init");
-		
+
 		ModItems.init();
 		ModItems.register();
-		
+
 		ModBlocks.init();
 		ModBlocks.register();
 	}
-	
+
 	@EventHandler
-	public void Init(FMLInitializationEvent event)
-	{
+	public void Init(FMLInitializationEvent event) {
 		System.out.println("init");
 		proxy.init();
 	}
-	
+
 	@EventHandler
-	public void PostInit(FMLPostInitializationEvent event)
-	{
+	public void PostInit(FMLPostInitializationEvent event) {
 		System.out.println("Post init");
 	}
 }
