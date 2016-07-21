@@ -10,7 +10,7 @@ public class BtSReference {
 	public static final String SERVER_PROXY_CLASS = "com.Meelock.BtS.proxy.ServerProxy";
 
 	public static enum BtSItems {
-		PLASTIC("plastic", "ItemPlastic");
+		PLASTIC_INGOT("plastic_ingot", "ItemPlastic_ingot");
 		
 		private String unlocalizedName;
 		private String registryName;

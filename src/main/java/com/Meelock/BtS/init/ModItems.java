@@ -10,18 +10,18 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
 
-	public static Item plastic;
+	public static Item plastic_ingot;
 
 	public static void init() {
-		plastic = new ItemGeneric(BtSReference.BtSItems.PLASTIC);
+		plastic_ingot = new ItemGeneric(BtSReference.BtSItems.PLASTIC_INGOT);
 	}
 
 	public static void register() {
-		GameRegistry.register(plastic);
+		GameRegistry.register(plastic_ingot);
 	}
 
 	public static void registerRenders() {
-		registerRender(plastic);
+		registerRender(plastic_ingot);
 	}
 
 	private static void registerRender(Item item) {

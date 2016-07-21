@@ -1,3 +1,4 @@
-item.plastic.name=Plastic
+item.plastic_ingot.name=Plastic Ingot
 
 tile.strand.name=Block of dimensional strandy mess
+tile.electric_fence.name=Electric Fence
