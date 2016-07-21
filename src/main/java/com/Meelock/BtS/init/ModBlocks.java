@@ -15,16 +15,16 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModBlocks {
 
-	public static Block strand;
+	public static Block tentacle;
 	public static Block electric_fence;
 
 	public static void init() {
-		strand = new BlockGeneric(BtSReference.BtSBlocks.STRAND);
+		tentacle = new BlockGeneric(BtSReference.BtSBlocks.TENTACLE);
 		electric_fence = new BlockElectric_fence(Material.ROCK, MapColor.DIRT, BtSReference.BtSBlocks.ELECTRIC_FENCE);
 	}
 
 	public static void register() {
-		registerBlock(strand);
+		registerBlock(tentacle);
 		registerBlock(electric_fence);
 	}
 
@@ -36,7 +36,7 @@ public class ModBlocks {
 	}
 
 	public static void registerRenders() {
-		registerRender(strand);
+		registerRender(tentacle);
 		registerRender(electric_fence);
 	}
 
