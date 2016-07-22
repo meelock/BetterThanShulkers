@@ -1,6 +1,7 @@
 package com.Meelock.PlastiTech.blocks;
 
 import com.Meelock.PlastiTech.PlastiTechReference;
+import com.Meelock.PlastiTech.init.CreativeTabPlastiTech;
 
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.material.MapColor;
@@ -23,6 +24,8 @@ public class BlockElectric_fence extends BlockFence {
 
 		setUnlocalizedName(blocktype.getUnlocalizedName());
 		setRegistryName(blocktype.getRegistryName());
+		setCreativeTab(CreativeTabPlastiTech.tabPlastiTech);
+		
 	}
 
 	@Override

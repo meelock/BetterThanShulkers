@@ -1,0 +1,19 @@
+item.plastic_ingot.name=Plastic Ingot
+item.tooth.name=Tooth
+item.hot_sticky_reinforced_plastic_bar.name=Hot and sticky reinforced plastic bar
+item.bucket_boiled_polymer_fluid.name=Bucket o' boiled polymer fluid
+item.gold_dust.name=Gold dust
+item.mortar_and_pestal.name=Mortar and pestal
+item.bucket_unboiled_polymer_fluid.name=Bucket o' unboiled polymer fluid
+item.hot_sticky_plastic_bar.name=Hot and sticky plastic bar
+item.reinforced_plastic_ingot.name=reinforced plastic ingot
+item.filled_reinforced_plastic_bar_mold.name=Filled reinforced plastic bar mold
+item.unfired_ingot_mold.name=Unfired ingot mold
+item.ingot_mold.name=Ingot mold
+item.filled_plastic_bar_mold.name=Filled plastic bar mold
+
+tile.Tentacle.name=Tentacle
+tile.Tentacle_sucker.name=Tentacle Sucker
+tile.electric_fence.name=Electric Fence
+
+itemGroup.PlastiTech=PlatiTech

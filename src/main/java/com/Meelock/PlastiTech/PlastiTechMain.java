@@ -3,8 +3,10 @@ package com.Meelock.PlastiTech;
 import com.Meelock.PlastiTech.init.ModBlocks;
 import com.Meelock.PlastiTech.init.ModCrafting;
 import com.Meelock.PlastiTech.init.ModItems;
+import com.Meelock.PlastiTech.init.ModMobDropsHandler;
 import com.Meelock.PlastiTech.proxy.CommonProxy;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -39,6 +41,7 @@ public class PlastiTechMain {
 		proxy.init();
 		
 		ModCrafting.register();
+		MinecraftForge.EVENT_BUS.register(new ModMobDropsHandler());
 	}
 
 	@EventHandler
