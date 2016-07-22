@@ -33,7 +33,7 @@ public class PlastiTechReference {
 		private String unlocalizedName;
 		private String registryName;
 
-		BtSItems(String unlocalizedName, String registryName) {
+		PlastiTechItems(String unlocalizedName, String registryName) {
 			this.unlocalizedName = unlocalizedName;
 			this.registryName = registryName;
 		}
@@ -53,7 +53,7 @@ public class PlastiTechReference {
 		private String unlocalizedName;
 		private String registryName;
 
-		BtSBlocks(String unlocalizedName, String registryName) {
+		PlastiTechBlocks(String unlocalizedName, String registryName) {
 			this.unlocalizedName = unlocalizedName;
 			this.registryName = registryName;
 		}

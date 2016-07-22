@@ -14,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = PlastiTechReference.MOD_ID, name = PlastiTechReference.NAME, version = PlastiTechReference.VERSION, acceptedMinecraftVersions = PlastiTechReference.ACCEPTED_VERSIONS)
-public class BtSMain {
+public class PlastiTechMain {
 
 	@Instance
 	public static PlastiTechMain instance;
