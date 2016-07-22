@@ -1,7 +1,7 @@
-package com.Meelock.BtS.proxy;
+package com.Meelock.PlastiTech.proxy;
 
-import com.Meelock.BtS.init.ModBlocks;
-import com.Meelock.BtS.init.ModItems;
+import com.Meelock.PlastiTech.init.ModBlocks;
+import com.Meelock.PlastiTech.init.ModItems;
 
 public class ClientProxy implements CommonProxy {
 

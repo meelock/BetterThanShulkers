@@ -1,15 +1,15 @@
-package com.Meelock.BtS;
+package com.Meelock.PlastiTech;
 
-public class BtSReference {
-	public static final String MOD_ID = "BtS";
-	public static final String NAME = "BetterThanShulkers";
+public class PlastiTechReference {
+	public static final String MOD_ID = "PlastiTech";
+	public static final String NAME = "PlastiTech";
 	public static final String VERSION = "0.0.1-alpha";
 	public static final String ACCEPTED_VERSIONS = "[1.10.2]";
 
-	public static final String CLIENT_PROXY_CLASS = "com.Meelock.BtS.proxy.ClientProxy";
-	public static final String SERVER_PROXY_CLASS = "com.Meelock.BtS.proxy.ServerProxy";
+	public static final String CLIENT_PROXY_CLASS = "com.Meelock.PlastiTech.proxy.ClientProxy";
+	public static final String SERVER_PROXY_CLASS = "com.Meelock.PlastiTech.proxy.ServerProxy";
 
-	public static enum BtSItems {
+	public static enum PlastiTechItems {
 		PLASTIC_INGOT("plastic_ingot",
 				"ItemPlastic_ingot"),
 		HOT_STICKY_LIGHTLY_REINFORCED_PLASTIC_BAR("hot_sticky_lightly_reinforced_plastic_bar",
@@ -27,7 +27,8 @@ public class BtSReference {
 		MORTAR_AND_PESTAL("mortar_and_pestal",
 				"ItemMortar_and_pestal"),
 		TOOTH("tooth",
-				"ItemTooth");
+				"ItemTooth"), 
+		INGOT_MOLD("ingot_mold", "ItemIngot_mold");
 
 		private String unlocalizedName;
 		private String registryName;
@@ -46,8 +47,8 @@ public class BtSReference {
 		}
 	}
 
-	public static enum BtSBlocks {
-		TENTACLE("Tentacle", "BlockTentacle"), ELECTRIC_FENCE("electric_fence", "BlockElectric_fence");
+	public static enum PlastiTechBlocks {
+		TENTACLE("Tentacle", "BlockTentacle"), TENTACLE_SUCKER("Tentacle_sucker", "BlockTentacleSucker"), ELECTRIC_FENCE("electric_fence", "BlockElectric_fence");
 
 		private String unlocalizedName;
 		private String registryName;

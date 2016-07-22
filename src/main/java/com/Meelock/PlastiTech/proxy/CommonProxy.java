@@ -1,4 +1,4 @@
-package com.Meelock.BtS.proxy;
+package com.Meelock.PlastiTech.proxy;
 
 public interface CommonProxy {
 

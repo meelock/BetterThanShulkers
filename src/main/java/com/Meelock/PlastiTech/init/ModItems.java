@@ -1,7 +1,9 @@
-package com.Meelock.BtS.init;
+package com.Meelock.PlastiTech.init;
 
-import com.Meelock.BtS.BtSReference;
-import com.Meelock.BtS.items.ItemGeneric;
+import com.Meelock.PlastiTech.PlastiTechReference;
+import com.Meelock.PlastiTech.items.ItemBucket_boiled_polymer_fluid;
+import com.Meelock.PlastiTech.items.ItemGeneric;
+import com.Meelock.PlastiTech.items.ItemMortar_and_pestal;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -19,18 +21,20 @@ public class ModItems {
 	public static Item lightly_reinforced_plastic_ingot;
 	public static Item mortar_and_pestal;
 	public static Item tooth;
+	public static Item ingot_mold;
 	
 
 	public static void init() {
-		plastic_ingot = new ItemGeneric(BtSReference.BtSItems.PLASTIC_INGOT);
-		hot_sticky_lightly_reinforced_plastic_bar = new ItemGeneric(BtSReference.BtSItems.HOT_STICKY_LIGHTLY_REINFORCED_PLASTIC_BAR);
-		gold_dust = new ItemGeneric(BtSReference.BtSItems.GOLD_DUST);
-		bucket_unboiled_polymer_fluid = new ItemGeneric(BtSReference.BtSItems.BUCKET_UNBOILED_POLYMER_FLUID);
-		bucket_boiled_polymer_fluid = new ItemGeneric(BtSReference.BtSItems.BUCKET_BOILED_POLYMER_FLUID);
-		hot_sticky_plastic_bar = new ItemGeneric(BtSReference.BtSItems.HOT_STICKY_PLASTIC_BAR);
-		lightly_reinforced_plastic_ingot = new ItemGeneric(BtSReference.BtSItems.LIGHTLY_REINFORCED_PLASTIC_INGOT);
-		mortar_and_pestal = new ItemGeneric(BtSReference.BtSItems.MORTAR_AND_PESTAL);
-		tooth = new ItemGeneric(BtSReference.BtSItems.TOOTH);
+		plastic_ingot = new ItemGeneric(PlastiTechReference.PlastiTechItems.PLASTIC_INGOT);
+		hot_sticky_lightly_reinforced_plastic_bar = new ItemGeneric(PlastiTechReference.PlastiTechItems.HOT_STICKY_LIGHTLY_REINFORCED_PLASTIC_BAR);
+		gold_dust = new ItemGeneric(PlastiTechReference.PlastiTechItems.GOLD_DUST);
+		bucket_unboiled_polymer_fluid = new ItemGeneric(PlastiTechReference.PlastiTechItems.BUCKET_UNBOILED_POLYMER_FLUID);
+		bucket_boiled_polymer_fluid = new ItemBucket_boiled_polymer_fluid(PlastiTechReference.PlastiTechItems.BUCKET_BOILED_POLYMER_FLUID);
+		hot_sticky_plastic_bar = new ItemGeneric(PlastiTechReference.PlastiTechItems.HOT_STICKY_PLASTIC_BAR);
+		lightly_reinforced_plastic_ingot = new ItemGeneric(PlastiTechReference.PlastiTechItems.LIGHTLY_REINFORCED_PLASTIC_INGOT);
+		mortar_and_pestal = new ItemMortar_and_pestal(PlastiTechReference.PlastiTechItems.MORTAR_AND_PESTAL);
+		tooth = new ItemGeneric(PlastiTechReference.PlastiTechItems.TOOTH);
+		ingot_mold = new ItemIngot_mold(PlastiTechReference.PlastiTechItems.INGOT_MOLD);
 	}
 
 	public static void register() {
@@ -43,6 +47,7 @@ public class ModItems {
 		GameRegistry.register(lightly_reinforced_plastic_ingot);
 		GameRegistry.register(mortar_and_pestal);
 		GameRegistry.register(tooth);
+		GameRegistry.register(ingot_mold);
 	}
 
 	public static void registerRenders() {
@@ -55,6 +60,7 @@ public class ModItems {
 		registerRender(lightly_reinforced_plastic_ingot);
 		registerRender(mortar_and_pestal);
 		registerRender(tooth);
+		registerRender(ingot_mold);
 	}
 
 	private static void registerRender(Item item) {

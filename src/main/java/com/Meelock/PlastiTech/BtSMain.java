@@ -1,8 +1,9 @@
-package com.Meelock.BtS;
+package com.Meelock.PlastiTech;
 
-import com.Meelock.BtS.init.ModBlocks;
-import com.Meelock.BtS.init.ModItems;
-import com.Meelock.BtS.proxy.CommonProxy;
+import com.Meelock.PlastiTech.init.ModBlocks;
+import com.Meelock.PlastiTech.init.ModCrafting;
+import com.Meelock.PlastiTech.init.ModItems;
+import com.Meelock.PlastiTech.proxy.CommonProxy;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -12,13 +13,13 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = BtSReference.MOD_ID, name = BtSReference.NAME, version = BtSReference.VERSION, acceptedMinecraftVersions = BtSReference.ACCEPTED_VERSIONS)
+@Mod(modid = PlastiTechReference.MOD_ID, name = PlastiTechReference.NAME, version = PlastiTechReference.VERSION, acceptedMinecraftVersions = PlastiTechReference.ACCEPTED_VERSIONS)
 public class BtSMain {
 
 	@Instance
-	public static BtSMain instance;
+	public static PlastiTechMain instance;
 
-	@SidedProxy(clientSide = BtSReference.CLIENT_PROXY_CLASS, serverSide = BtSReference.SERVER_PROXY_CLASS)
+	@SidedProxy(clientSide = PlastiTechReference.CLIENT_PROXY_CLASS, serverSide = PlastiTechReference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 
 	@EventHandler
@@ -36,6 +37,8 @@ public class BtSMain {
 	public void Init(FMLInitializationEvent event) {
 		System.out.println("init");
 		proxy.init();
+		
+		ModCrafting.register();
 	}
 
 	@EventHandler

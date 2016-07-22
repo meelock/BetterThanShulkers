@@ -1,6 +1,6 @@
-package com.Meelock.BtS.blocks;
+package com.Meelock.PlastiTech.blocks;
 
-import com.Meelock.BtS.BtSReference;
+import com.Meelock.PlastiTech.PlastiTechReference;
 
 import net.minecraft.block.BlockFence;
 import net.minecraft.block.material.MapColor;
@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 public class BlockElectric_fence extends BlockFence {
 
-	public BlockElectric_fence(Material mat, MapColor map, BtSReference.BtSBlocks blocktype) {
+	public BlockElectric_fence(Material mat, MapColor map, PlastiTechReference.PlastiTechBlocks blocktype) {
 		super(mat, map);
 		this.setDefaultState(this.blockState.getBaseState().withProperty(NORTH, Boolean.valueOf(false))
 				.withProperty(EAST, Boolean.valueOf(false)).withProperty(SOUTH, Boolean.valueOf(false))

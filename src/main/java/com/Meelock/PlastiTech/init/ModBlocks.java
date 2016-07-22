@@ -1,8 +1,8 @@
-package com.Meelock.BtS.init;
+package com.Meelock.PlastiTech.init;
 
-import com.Meelock.BtS.BtSReference;
-import com.Meelock.BtS.blocks.BlockElectric_fence;
-import com.Meelock.BtS.blocks.BlockGeneric;
+import com.Meelock.PlastiTech.PlastiTechReference;
+import com.Meelock.PlastiTech.blocks.BlockElectric_fence;
+import com.Meelock.PlastiTech.blocks.BlockGeneric;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;
@@ -17,15 +17,19 @@ public class ModBlocks {
 
 	public static Block tentacle;
 	public static Block electric_fence;
+	public static Block tentacle_sucker;
 
 	public static void init() {
-		tentacle = new BlockGeneric(BtSReference.BtSBlocks.TENTACLE);
-		electric_fence = new BlockElectric_fence(Material.ROCK, MapColor.DIRT, BtSReference.BtSBlocks.ELECTRIC_FENCE);
+		tentacle = new BlockGeneric(PlastiTechReference.PlastiTechBlocks.TENTACLE);
+		tentacle_sucker = new BlockGeneric(PlastiTechReference.PlastiTechBlocks.TENTACLE_SUCKER);
+		electric_fence = new BlockElectric_fence(Material.ROCK, MapColor.DIRT, PlastiTechReference.PlastiTechBlocks.ELECTRIC_FENCE);
+		
 	}
 
 	public static void register() {
 		registerBlock(tentacle);
 		registerBlock(electric_fence);
+		registerBlock(tentacle_sucker);
 	}
 
 	private static void registerBlock(Block block) {
@@ -37,6 +41,7 @@ public class ModBlocks {
 
 	public static void registerRenders() {
 		registerRender(tentacle);
+		registerRender(tentacle_sucker);
 		registerRender(electric_fence);
 	}
 

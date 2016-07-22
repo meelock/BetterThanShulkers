@@ -1,14 +1,14 @@
 [
 {
-  "modid": "BtS",
-  "name": "BetterThanShulkers",
-  "description": "BtS is a mod that I'm working on that will (hopefully) add: its own vanilla themed power system, some vanilla additions such as more shields, more elytras, etc... and much more! ...maybe.",
+  "modid": "PlastiTech",
+  "name": "PlastiTech",
+  "description": "PlastiTech is a reimagining of sorts of the old mod Plasticraft.",
   "version": "0.0.1-alpha",
   "mcversion": "1.10.2",
   "url": "",
   "updateUrl": "",
   "authorList": ["Meelock"],
-  "credits": "Probibly kneelawk for gettingt me into modding.",
+  "credits": "Probibly kneelawk for getting me into modding.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
