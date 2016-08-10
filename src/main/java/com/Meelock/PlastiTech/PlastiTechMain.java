@@ -1,9 +1,11 @@
 package com.Meelock.PlastiTech;
 
+import com.Meelock.PlastiTech.PlastiTechReference.PlastiTechItems;
 import com.Meelock.PlastiTech.init.ModBlocks;
 import com.Meelock.PlastiTech.init.ModCrafting;
 import com.Meelock.PlastiTech.init.ModItems;
 import com.Meelock.PlastiTech.init.ModMobDropsHandler;
+import com.Meelock.PlastiTech.items.ItemCoolingHSRPlasticBar;
 import com.Meelock.PlastiTech.proxy.CommonProxy;
 
 import net.minecraftforge.common.MinecraftForge;
@@ -42,6 +44,7 @@ public class PlastiTechMain {
 		
 		ModCrafting.register();
 		MinecraftForge.EVENT_BUS.register(new ModMobDropsHandler());
+		MinecraftForge.EVENT_BUS.register(new ItemCoolingHSRPlasticBar(PlastiTechItems.HOT_STICKY_REINFORCED_PLASTIC_BAR));
 	}
 
 	@EventHandler

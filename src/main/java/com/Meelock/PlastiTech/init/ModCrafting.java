@@ -17,7 +17,21 @@ public class ModCrafting {
 				'I', Items.STICK);
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.gold_dust),
 				new Object[] { Items.GOLD_INGOT, ModItems.mortar_and_pestal });
-		
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.unfired_ingot_mold), "   ", "C C", "CCC", 'C',
+				Items.CLAY_BALL);
+		GameRegistry.addSmelting(new ItemStack(ModItems.unfired_ingot_mold), new ItemStack(ModItems.ingot_mold), 4);
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.filled_plastic_bar_mold),
+				new Object[] { ModItems.bucket_boiled_polymer_fluid, ModItems.ingot_mold });
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.filled_reinforced_plastic_bar_mold),
+				new Object[] { ModItems.filled_plastic_bar_mold, Items.STRING, Items.IRON_INGOT });
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.hot_sticky_plastic_bar),
+				new Object[] { ModItems.filled_plastic_bar_mold });
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.hot_sticky_reinforced_plastic_bar),
+				new Object[] { ModItems.filled_reinforced_plastic_bar_mold });
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.reinforced_plastic_ingot),
+				new Object[] { ModItems.hot_sticky_reinforced_plastic_bar, Blocks.ICE });
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.plastic_ingot),
+				new Object[] { ModItems.hot_sticky_plastic_bar, Blocks.ICE });
 
 	}
 
