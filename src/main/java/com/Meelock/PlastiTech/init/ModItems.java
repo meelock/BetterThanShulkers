@@ -2,20 +2,22 @@ package com.Meelock.PlastiTech.init;
 
 import com.Meelock.PlastiTech.PlastiTechReference;
 import com.Meelock.PlastiTech.items.ItemBucket_boiled_polymer_fluid;
+import com.Meelock.PlastiTech.items.ItemEarthTransmutitiveStone;
 import com.Meelock.PlastiTech.items.ItemGeneric;
 import com.Meelock.PlastiTech.items.ItemIngot_mold;
+import com.Meelock.PlastiTech.items.ItemMiningDrill;
+import com.Meelock.PlastiTech.items.ItemIncompleteMiningDrill;
 import com.Meelock.PlastiTech.items.ItemMortar_and_pestal;
+import com.Meelock.PlastiTech.items.ItemSkyTransmutitiveStone;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
-	
-	
-	
 
 	public static Item plastic_ingot;
 	public static Item hot_sticky_reinforced_plastic_bar;
@@ -30,8 +32,14 @@ public class ModItems {
 	public static Item filled_plastic_bar_mold;
 	public static Item unfired_ingot_mold;
 	public static Item filled_reinforced_plastic_bar_mold;
+	public static Item mining_drill;
+	public static Item sky_transmutitive_stone;
+	public static Item earth_transmutitive_stone;
+	public static Item ender_control_unit;
+	public static Item redstone_control_unit;
 
 	public static void init() {
+
 		plastic_ingot = new ItemGeneric(PlastiTechReference.PlastiTechItems.PLASTIC_INGOT);
 		hot_sticky_reinforced_plastic_bar = new ItemGeneric(
 				PlastiTechReference.PlastiTechItems.HOT_STICKY_REINFORCED_PLASTIC_BAR);
@@ -41,14 +49,21 @@ public class ModItems {
 		bucket_boiled_polymer_fluid = new ItemBucket_boiled_polymer_fluid(
 				PlastiTechReference.PlastiTechItems.BUCKET_BOILED_POLYMER_FLUID);
 		hot_sticky_plastic_bar = new ItemGeneric(PlastiTechReference.PlastiTechItems.HOT_STICKY_PLASTIC_BAR);
-		reinforced_plastic_ingot = new ItemGeneric(
-				PlastiTechReference.PlastiTechItems.REINFORCED_PLASTIC_INGOT);
+		reinforced_plastic_ingot = new ItemGeneric(PlastiTechReference.PlastiTechItems.REINFORCED_PLASTIC_INGOT);
 		mortar_and_pestal = new ItemMortar_and_pestal(PlastiTechReference.PlastiTechItems.MORTAR_AND_PESTAL);
 		tooth = new ItemGeneric(PlastiTechReference.PlastiTechItems.TOOTH);
 		ingot_mold = new ItemGeneric(PlastiTechReference.PlastiTechItems.INGOT_MOLD);
 		filled_plastic_bar_mold = new ItemIngot_mold(PlastiTechReference.PlastiTechItems.FILLED_PLASTIC_BAR_MOLD);
-		filled_reinforced_plastic_bar_mold = new ItemIngot_mold(PlastiTechReference.PlastiTechItems.FILLED_REINFORCED_PLASTIC_BAR_MOLD);
+		filled_reinforced_plastic_bar_mold = new ItemIngot_mold(
+				PlastiTechReference.PlastiTechItems.FILLED_REINFORCED_PLASTIC_BAR_MOLD);
 		unfired_ingot_mold = new ItemIngot_mold(PlastiTechReference.PlastiTechItems.UNFIRED_INGOT_MOLD);
+		mining_drill = new ItemMiningDrill(PlastiTechReference.PlastiTechItems.MINING_DRILL);
+		sky_transmutitive_stone = new ItemSkyTransmutitiveStone(
+				PlastiTechReference.PlastiTechItems.SKY_TRANSMUTITIVE_STONE);
+		earth_transmutitive_stone = new ItemEarthTransmutitiveStone(
+				PlastiTechReference.PlastiTechItems.EARTH_TRANSMUTITIVE_STONE);
+		ender_control_unit = new ItemGeneric(PlastiTechReference.PlastiTechItems.ENDER_CONTROL_UNIT);
+
 	}
 
 	public static void register() {
@@ -65,6 +80,9 @@ public class ModItems {
 		GameRegistry.register(filled_reinforced_plastic_bar_mold);
 		GameRegistry.register(unfired_ingot_mold);
 		GameRegistry.register(filled_plastic_bar_mold);
+		GameRegistry.register(mining_drill);
+		GameRegistry.register(sky_transmutitive_stone);
+		GameRegistry.register(earth_transmutitive_stone);
 	}
 
 	public static void registerRenders() {
@@ -81,7 +99,10 @@ public class ModItems {
 		registerRender(unfired_ingot_mold);
 		registerRender(filled_reinforced_plastic_bar_mold);
 		registerRender(filled_plastic_bar_mold);
-		
+		registerRender(mining_drill);
+		registerRender(sky_transmutitive_stone);
+		registerRender(earth_transmutitive_stone);
+
 	}
 
 	private static void registerRender(Item item) {

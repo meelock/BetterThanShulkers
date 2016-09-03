@@ -32,6 +32,8 @@ public class ModCrafting {
 				new Object[] { ModItems.hot_sticky_reinforced_plastic_bar, Blocks.ICE });
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.plastic_ingot),
 				new Object[] { ModItems.hot_sticky_plastic_bar, Blocks.ICE });
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.mining_drill, 1, 1998), "   ", "   ", "   ", 'P', ModItems.reinforced_plastic_ingot);
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.mining_drill, 1, ModItems.mining_drill.getDamage(stack) - 20), new Object[] {ModItems.mining_drill, Items.REDSTONE});
 
 	}
 

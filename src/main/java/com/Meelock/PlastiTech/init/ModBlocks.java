@@ -18,11 +18,15 @@ public class ModBlocks {
 	public static Block tentacle;
 	public static Block electric_fence;
 	public static Block tentacle_sucker;
+	public static Block plastic_block;
+	public static Block paradoxite_ore;
 
 	public static void init() {
 		tentacle = new BlockGeneric(PlastiTechReference.PlastiTechBlocks.TENTACLE);
 		tentacle_sucker = new BlockGeneric(PlastiTechReference.PlastiTechBlocks.TENTACLE_SUCKER);
 		electric_fence = new BlockElectric_fence(Material.ROCK, MapColor.DIRT, PlastiTechReference.PlastiTechBlocks.ELECTRIC_FENCE);
+		plastic_block = new BlockGeneric(PlastiTechReference.PlastiTechBlocks.PLASTIC_BLOCK);
+		paradoxite_ore = new BlockGeneric(PlastiTechReference.PlastiTechBlocks.PARADOXITE_ORE);
 		
 	}
 
@@ -30,6 +34,8 @@ public class ModBlocks {
 		registerBlock(tentacle);
 		registerBlock(electric_fence);
 		registerBlock(tentacle_sucker);
+		registerBlock(plastic_block);
+		registerBlock(paradoxite_ore);
 	}
 
 	private static void registerBlock(Block block) {
@@ -43,6 +49,8 @@ public class ModBlocks {
 		registerRender(tentacle);
 		registerRender(tentacle_sucker);
 		registerRender(electric_fence);
+		registerRender(plastic_block);
+		registerRender(paradoxite_ore);
 	}
 
 	private static void registerRender(Block block) {

@@ -25,7 +25,7 @@ group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-
 archivesBaseName = "modid"
 
 minecraft {
-    version = "1.10.2-12.18.1.2011"
+    version = "1.10.2-12.18.1.2053"
     runDir = "run"
     
     // the mappings can be changed at any time, and must be in the following format.
@@ -39,15 +39,28 @@ minecraft {
 
 repositories {
 
-    maven {
-
+    maven{
+    
         url 'http://maven.epoxide.xyz'
+    
+    }
+
+    maven {
+        
+        // location of the maven that hosts JEI files
+        url "http://dvs1.progwml6.com/files/maven"
+        
     }
 }
 
 dependencies {
 
-    compile "net.darkhax.tesla:Tesla:1.10.2-1.2.1.42"
+    compile "net.darkhax.tesla:Tesla:1.10.2-1.2.1.46"
+    
+    // compile against the JEI API
+    deobfCompile "mezz.jei:jei_1.10.2:3.8.1.242:api"
+    // at runtime, use the full JEI jar
+    runtime "mezz.jei:jei_1.10.2:3.8.1.242"
 }
 
 processResources

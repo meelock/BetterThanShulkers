@@ -10,38 +10,24 @@ public class PlastiTechReference {
 	public static final String SERVER_PROXY_CLASS = "com.Meelock.PlastiTech.proxy.ServerProxy";
 
 	public static enum PlastiTechItems {
-		PLASTIC_INGOT("plastic_ingot", "ItemPlastic_ingot"), 
-		HOT_STICKY_REINFORCED_PLASTIC_BAR(
-		"hot_sticky_reinforced_plastic_bar",
-		"ItemHot_sticky_reinforced_plastic_bar"), 
-		GOLD_DUST("gold_dust",
-		"ItemGold_dust"), 
-		BUCKET_UNBOILED_POLYMER_FLUID("bucket_unboiled_polymer_fluid",
-		"ItemBucket_unboiled_polymer_fluid"), 
-		BUCKET_BOILED_POLYMER_FLUID(
-		"bucket_boiled_polymer_fluid",
-		"ItemBucket_boiled_polymer_fluid"), 
-		HOT_STICKY_PLASTIC_BAR(
-		"hot_sticky_plastic_bar",
-		"ItemHot_sticky_plastic_bar"), 
-		REINFORCED_PLASTIC_INGOT(
-		"reinforced_plastic_ingot",
-		"ItemReinforced_plastic_ingot"), 
-		MORTAR_AND_PESTAL(
-		"mortar_and_pestal", "ItemMortar_and_pestal"), 
-		TOOTH(
-		"tooth", "ItemTooth"), 
-		INGOT_MOLD("ingot_mold",
-		"ItemIngot_mold"), 
-		FILLED_PLASTIC_BAR_MOLD(
-		"filled_plastic_bar_mold",
-		"ItemFilled_plastic_bar_mold"), 
-		UNFIRED_INGOT_MOLD(
-		"unfired_ingot_mold",
-		"ItemUnfired_ingot_mold"), 
-		FILLED_REINFORCED_PLASTIC_BAR_MOLD(
-		"filled_reinforced_plastic_bar_mold",
-		"ItemFilled_reinforced_plastic_bar_mold");
+		PLASTIC_INGOT("plastic_ingot", "ItemPlastic_ingot"),
+		HOT_STICKY_REINFORCED_PLASTIC_BAR("hot_sticky_reinforced_plastic_bar", "ItemHot_sticky_reinforced_plastic_bar"),
+		GOLD_DUST("gold_dust", "ItemGold_dust"),
+		BUCKET_UNBOILED_POLYMER_FLUID("bucket_unboiled_polymer_fluid", "ItemBucket_unboiled_polymer_fluid"),
+		BUCKET_BOILED_POLYMER_FLUID("bucket_boiled_polymer_fluid", "ItemBucket_boiled_polymer_fluid"),
+		HOT_STICKY_PLASTIC_BAR("hot_sticky_plastic_bar", "ItemHot_sticky_plastic_bar"),
+		REINFORCED_PLASTIC_INGOT("reinforced_plastic_ingot", "ItemReinforced_plastic_ingot"),
+		MORTAR_AND_PESTAL("mortar_and_pestal", "ItemMortar_and_pestal"),
+		TOOTH("tooth", "ItemTooth"),
+		INGOT_MOLD("ingot_mold", "ItemIngot_mold"),
+		FILLED_PLASTIC_BAR_MOLD("filled_plastic_bar_mold", "ItemFilled_plastic_bar_mold"),
+		UNFIRED_INGOT_MOLD("unfired_ingot_mold", "ItemUnfired_ingot_mold"),
+		FILLED_REINFORCED_PLASTIC_BAR_MOLD("filled_reinforced_plastic_bar_mold",
+				"ItemFilled_reinforced_plastic_bar_mold"),
+		MINING_DRILL("mining_drill", "ItemMining_drill"),
+		SKY_TRANSMUTITIVE_STONE("sky_transmutitive_stone", "ItemSky_transmutitive_stone"),
+		EARTH_TRANSMUTITIVE_STONE("earth_transmutitive_stone", "ItemEarth_transmutitive_stone"),
+		ENDER_CONTROL_UNIT("ender_control_unit", "ItemEnder_control_unit");
 
 		private String unlocalizedName;
 		private String registryName;
@@ -61,8 +47,11 @@ public class PlastiTechReference {
 	}
 
 	public static enum PlastiTechBlocks {
-		TENTACLE("Tentacle", "BlockTentacle"), TENTACLE_SUCKER("Tentacle_sucker",
-				"BlockTentacleSucker"), ELECTRIC_FENCE("electric_fence", "BlockElectric_fence");
+		TENTACLE("Tentacle", "BlockTentacle"),
+		TENTACLE_SUCKER("Tentacle_sucker", "BlockTentacleSucker"),
+		ELECTRIC_FENCE("electric_fence", "BlockElectric_fence"),
+		PLASTIC_BLOCK("plastic_block", "BlockPlastic_block"),
+		PARADOXITE_ORE("paradoxite_ore", "BlockParadoxite_ore");
 
 		private String unlocalizedName;
 		private String registryName;

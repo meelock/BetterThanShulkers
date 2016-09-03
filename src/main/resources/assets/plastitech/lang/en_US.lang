@@ -11,9 +11,15 @@ item.filled_reinforced_plastic_bar_mold.name=Filled reinforced plastic bar mold
 item.unfired_ingot_mold.name=Unfired ingot mold
 item.ingot_mold.name=Ingot mold
 item.filled_plastic_bar_mold.name=Filled plastic bar mold
+item.mining_drill.name=Mining Drill
+item.earth_transmutitive_stone.name=Earth transmutitive stone
+item.sky_transmutitive_stone.name=Sky transmutitive stone
+item.ender_control_unit.name=Ender-Pearl control system
 
 tile.Tentacle.name=Tentacle
 tile.Tentacle_sucker.name=Tentacle Sucker
 tile.electric_fence.name=Electric Fence
+tile.plastic_block.name=Plastic Block
+tile.paradoxite_ore.name=Paradoxite Ore
 
-itemGroup.PlastiTech=PlatiTech
+itemGroup.PlastiTech=PlastiTech
