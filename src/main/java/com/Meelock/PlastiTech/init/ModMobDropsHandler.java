@@ -23,7 +23,7 @@ public class ModMobDropsHandler {
 				// pool2.addEntry(new LootEntryItem(ITEM, WEIGHT, QUALITY,
 				// FUNCTIONS, CONDITIONS, NAME));
 				main.addEntry(new LootEntryItem(ModItems.tooth, 1, 0, new LootFunction[0],
-						new LootCondition[] { new RandomChance(0.3f) }, "PlastiTech:tooth"));
+						new LootCondition[] { new RandomChance(00.5f) }, "PlastiTech:tooth"));
 			}
 
 		}
