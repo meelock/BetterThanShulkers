@@ -10,6 +10,7 @@ import com.Meelock.PlastiTech.items.ItemIncompleteMiningDrill;
 import com.Meelock.PlastiTech.items.ItemMortar_and_pestal;
 import com.Meelock.PlastiTech.items.ItemSkyTransmutitiveStone;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -37,6 +38,14 @@ public class ModItems {
 	public static Item earth_transmutitive_stone;
 	public static Item ender_control_unit;
 	public static Item redstone_control_unit;
+	public static Item soul_ash;
+	public static Item diamantine_ingot;
+	public static Item slag_iron_ingot;
+	public static Item slag_iron_dust;
+	public static Item slag_iron_nugget;
+	public static Item smelted_iron_ingot;
+	public static Item smelted_iron_nugget;
+	public static Item smelted_iron_dust;
 
 	public static void init() {
 
@@ -63,6 +72,14 @@ public class ModItems {
 		earth_transmutitive_stone = new ItemEarthTransmutitiveStone(
 				PlastiTechReference.PlastiTechItems.EARTH_TRANSMUTITIVE_STONE);
 		ender_control_unit = new ItemGeneric(PlastiTechReference.PlastiTechItems.ENDER_CONTROL_UNIT);
+		diamantine_ingot = new ItemGeneric(PlastiTechReference.PlastiTechItems.diamantine_ingot);
+		soul_ash = new ItemGeneric(PlastiTechReference.PlastiTechItems.soul_ash);
+		slag_iron_ingot = new ItemGeneric(PlastiTechReference.PlastiTechItems.slag_iron_ingot);
+		slag_iron_dust = new ItemGeneric(PlastiTechReference.PlastiTechItems.slag_iron_dust);
+		slag_iron_nugget = new ItemGeneric(PlastiTechReference.PlastiTechItems.slag_iron_nugget);
+		smelted_iron_ingot = new ItemGeneric(PlastiTechReference.PlastiTechItems.smelted_iron_ingot);
+		smelted_iron_dust = new ItemGeneric(PlastiTechReference.PlastiTechItems.smelted_iron_dust);
+		smelted_iron_nugget = new ItemGeneric(PlastiTechReference.PlastiTechItems.smelted_iron_nugget);
 
 	}
 
@@ -83,6 +100,15 @@ public class ModItems {
 		GameRegistry.register(mining_drill);
 		GameRegistry.register(sky_transmutitive_stone);
 		GameRegistry.register(earth_transmutitive_stone);
+		GameRegistry.register(diamantine_ingot);
+		GameRegistry.register(soul_ash);
+		GameRegistry.register(slag_iron_ingot);
+		GameRegistry.register(slag_iron_dust);
+		GameRegistry.register(slag_iron_nugget);
+		GameRegistry.register(smelted_iron_ingot);
+		GameRegistry.register(smelted_iron_dust);
+		GameRegistry.register(smelted_iron_nugget);
+
 	}
 
 	public static void registerRenders() {
@@ -102,6 +128,14 @@ public class ModItems {
 		registerRender(mining_drill);
 		registerRender(sky_transmutitive_stone);
 		registerRender(earth_transmutitive_stone);
+		registerRender(diamantine_ingot);
+		registerRender(soul_ash);
+		registerRender(slag_iron_ingot);
+		registerRender(slag_iron_dust);
+		registerRender(slag_iron_nugget);
+		registerRender(smelted_iron_ingot);
+		registerRender(smelted_iron_nugget);
+		registerRender(smelted_iron_dust);
 
 	}
 

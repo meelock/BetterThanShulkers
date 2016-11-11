@@ -93,11 +93,11 @@ public class ItemIncompleteMiningDrill extends ItemPickaxe {
         }
     }
 
-	@Override
-	public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
+//	@Override
+//	public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced) {
 
-		TeslaUtils.createTooltip(stack, tooltip);
-	}
+//		TeslaUtils.createTooltip(stack, tooltip);
+//	}
 
 	@Override
 	public ICapabilityProvider initCapabilities(final ItemStack stack, NBTTagCompound nbt) {

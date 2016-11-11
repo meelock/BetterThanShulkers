@@ -27,7 +27,15 @@ public class PlastiTechReference {
 		MINING_DRILL("mining_drill", "ItemMining_drill"),
 		SKY_TRANSMUTITIVE_STONE("sky_transmutitive_stone", "ItemSky_transmutitive_stone"),
 		EARTH_TRANSMUTITIVE_STONE("earth_transmutitive_stone", "ItemEarth_transmutitive_stone"),
-		ENDER_CONTROL_UNIT("ender_control_unit", "ItemEnder_control_unit");
+		ENDER_CONTROL_UNIT("ender_control_unit", "ItemEnder_control_unit"), 
+		diamantine_ingot("diamantine_ingot", "ItemDiamantine_ingot"), 
+		soul_ash("soul_ash", "ItemSoul_ash"), 
+		slag_iron_ingot("slag_iron_ingot", "ItemSlag_iron_ingot"), 
+		smelted_iron_ingot("smelted_iron_ingot", "ItemSmelted_iron_ingot"), 
+		slag_iron_dust("slag_iron_dust", "ItemSlag_iron_dust"), 
+		slag_iron_nugget("slag_iron_nugget", "ItemSlag_iron_nugget"), //hi there
+		smelted_iron_dust("smelted_iron_dust", "ItemSmelted_iron_dust"), 
+		smelted_iron_nugget("smelted_iron_nugget", "ItemSmelted_iron_nugget");
 
 		private String unlocalizedName;
 		private String registryName;
